@@ -58,21 +58,7 @@ public class ListadoMotoController implements DashboardAware {
         colModelo.setCellValueFactory(new PropertyValueFactory<>("modelo"));
         colMarca.setCellValueFactory(new PropertyValueFactory<>("marca"));
 
-//
-//        // Formatear la columna de precio
-//        colPrecio.setCellFactory(column -> new TableCell<Producto, Double>() {
-//            @Override
-//            protected void updateItem(Double precio, boolean empty) {
-//                super.updateItem(precio, empty);
-//                if (empty || precio == null) {
-//                    setText(null);
-//                } else {
-//                    setText(String.format("$%.2f", precio));
-//                }
-//            }
-//        });
-
-        // Cargar los productos
+        // Cargar las motos
         cargarMotos();
     }
 
