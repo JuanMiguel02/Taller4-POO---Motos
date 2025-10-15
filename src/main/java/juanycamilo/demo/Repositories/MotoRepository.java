@@ -48,18 +48,18 @@ public class MotoRepository {
     /**
      * Agrega un nuevo producto
      */
-    public void agregarMoto(Moto producto) {
+    public void agregarMoto(Moto moto) {
 
-        motos.add(producto);
+        motos.add(moto);
 
     }
 
     /**
      * Elimina un producto
      */
-    public void eliminarMoto(Moto producto) {
+    public void eliminarMoto(Moto moto) {
 
-        motos.remove(producto);
+        motos.remove(moto);
 
     }
 
@@ -76,7 +76,7 @@ public class MotoRepository {
     /**
      * Obtiene la cantidad de motos
      */
-    public int getCantidadProductos() {
+    public int getCantidadMotos() {
         return motos.size();
     }
 }

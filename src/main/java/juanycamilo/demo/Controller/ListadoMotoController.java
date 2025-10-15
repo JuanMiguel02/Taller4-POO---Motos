@@ -73,13 +73,13 @@ public class ListadoMotoController implements DashboardAware {
 //        });
 
         // Cargar los productos
-        cargarProductos();
+        cargarMotos();
     }
 
     /**
      * Carga los productos en la tabla
      */
-    public void cargarProductos() {
+    public void cargarMotos() {
         listaMotos = FXCollections.observableArrayList(motoRepository.getMotos());
         tablaMotos.setItems(listaMotos);
     }
@@ -88,7 +88,7 @@ public class ListadoMotoController implements DashboardAware {
      * Maneja el evento de click en el botón "Eliminar"
      */
     @FXML
-    private void onEliminarProducto() {
+    private void onEliminarMoto() {
         Moto motoSeleccionada = tablaMotos.getSelectionModel().getSelectedItem();
         
         if (motoSeleccionada == null) {
@@ -104,7 +104,7 @@ public class ListadoMotoController implements DashboardAware {
         confirmacion.showAndWait().ifPresent(response -> {
             if (response == ButtonType.OK) {
                 motoRepository.eliminarMoto(motoSeleccionada);
-                cargarProductos();
+                cargarMotos();
                 mostrarAlerta("Éxito", "Moto eliminada correctamente", Alert.AlertType.INFORMATION);
             }
         });

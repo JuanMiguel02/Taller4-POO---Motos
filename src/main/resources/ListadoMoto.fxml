@@ -50,7 +50,7 @@
                 <Insets top="15" />
             </VBox.margin>
             <Button fx:id="btnVolver" onAction="#onVolverDashboard" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: gray; -fx-text-fill: white; -fx-font-size: 13px; -fx-padding: 8 16; -fx-cursor: hand; -fx-background-radius: 5;" text="Volver " />
-         <Button fx:id="btnEliminar" layoutX="678.0" layoutY="10.0" onAction="#onEliminarProducto" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 13px; -fx-padding: 8 16; -fx-cursor: hand; -fx-background-radius: 5;" text="Eliminar Moto" />
+         <Button fx:id="btnEliminar" layoutX="678.0" layoutY="10.0" onAction="#onEliminarMoto" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 13px; -fx-padding: 8 16; -fx-cursor: hand; -fx-background-radius: 5;" text="Eliminar Moto" />
         </HBox>
     </VBox>
 </VBox>
